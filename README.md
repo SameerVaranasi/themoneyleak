@@ -55,7 +55,7 @@ Risk monitor: 7/14/30/60/90-day baseline demand estimates, recent-vs-prior sales
 - Revenue and margin KPIs use `Completed` transactions only. Returned, cancelled and pending transactions are excluded from the main sales KPIs.
 - Gross sales = quantity × transaction unit price; discount amount = gross sales × discount_pct; net sales = gross sales − discount amount; estimated cost = quantity × product unit_cost; estimated margin = net sales − estimated cost.
 - Return rate is returned transactions divided by completed + returned transactions. Cancellation rate is cancelled transactions divided by all filtered transactions.
-- The demand estimate is a transparent baseline: completed units in the latest 28-day window divided by 28, scaled to the selected forecast horizon. It is not a trained ML model and is not backtested yet.
+- The demand estimate is a transparent baseline: completed units in the latest 28-day window divided by 28; scaled to the selected forecast horizon. It is not a trained ML model and is not backtested yet.
 - Inventory observations are synthetic and may not represent current stock in real life. Review suggested quantities manually.
 - Currency is displayed as INR as a UI convention; confirm the intended currency before interpreting financial values.
 
